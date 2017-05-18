@@ -12,7 +12,7 @@
         "command": "-workbench.action.navigateForward"
     },
     {
-        "key": "ctrl+shift+'",
+        "key": "ctrl+'",
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
