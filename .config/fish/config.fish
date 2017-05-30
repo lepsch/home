@@ -21,6 +21,6 @@ function auto_activate_venv --on-variable PWD --on-event fish_prompt
     end
 end
 
-set VIRTUAL_ENV_DISABLE_PROMPT 1
-set VISUAL "code -w"
-set EDITOR $VISUAL
+set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
+set -gx VISUAL "code -w"
+set -gx EDITOR $VISUAL
