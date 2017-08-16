@@ -24,3 +24,4 @@ end
 set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
 set -gx VISUAL "code -w"
 set -gx EDITOR $VISUAL
+set -gx TZ ":/etc/localtime"
