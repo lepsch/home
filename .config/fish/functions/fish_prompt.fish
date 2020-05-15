@@ -13,7 +13,8 @@ function fish_prompt --description 'Write out the prompt'
   end
 
   if set -q VIRTUAL_ENV
-    echo -n -s (set_color normal) "(" (set_color -o blue) "🐍" (set_color -o yellow) "🐍" (set_color normal) ") "
+    set VENV (basename "$VIRTUAL_ENV")
+    echo -n -s (set_color normal) "(" (set_color -o blue) "$VENV" (set_color normal) ") "
   end
 
   echo -n -s "$USER" @ "$__fish_prompt_hostname" ' ' "$__fish_prompt_cwd" (prompt_pwd) (set_color '007e00') (__fish_git_prompt) "$__fish_prompt_normal" ' λ '

@@ -1,8 +1,8 @@
 function v --description 'virtualenv creation/activation shortcut'
     if test (count $argv) -ge 1
-        command python3.6 -m venv $argv
+        command virtualenv $argv
     else
-        command python3.6 -m venv .venv
+        command virtualenv .venv
     end
     auto_activate_venv $argv
 end
@@ -25,3 +25,7 @@ set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
 set -gx VISUAL "code -w"
 set -gx EDITOR $VISUAL
 set -gx TZ ":/etc/localtime"
+set -gx LC_ALL en_US.UTF-8
+set -gx LANG en_US.UTF-8
+set -gx PATH "$HOME/.cargo/bin" $PATH
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish

@@ -1,21 +1,58 @@
-// Place your settings in this file to overwrite the default settings
 {
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.autoSave": "afterDelay",
-    "window.menuBarVisibility": "toggle",
-    "editor.rulers": [120],
+    "files.associations": {
+        "pylintrc": "ini"
+    },
     "files.exclude": {
         "**/obj": true,
         "**/bin": true,
-        "**/__pycache__": true
+        "**/__pycache__": true,
+        "**/.cache": true,
+        "**/*.pyc": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
-    "workbench.welcome.enabled": false,
     "window.zoomLevel": 0,
-    "editor.wordWrap": false,
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "workbench.startupEditor": "none",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "Fira Code",
+    "material-icon-theme.showUpdateMessage": false,
+    "editor.rulers": [120],
+    "editor.wordWrap": "off",
+    // "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "Hack",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
-    "material-icon-theme.showUpdateMessage": false
+    "editor.fontWeight": "100",
+    "editor.tabSize": 4,
+    "[python]": {
+        "editor.tabSize": 4
+    },
+    "[javascript]": {
+        "editor.tabSize": 4
+    },
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "autoDocstring.docstringFormat": "sphinx",
+    "breadcrumbs.enabled": true,
+    "diffEditor.renderSideBySide": true,
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pycodestylePath": "pycodestyle",
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=D100,D200,D400"
+    ],
+    "python.linting.flake8Enabled": false,
+    "python.jediEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "go.useLanguageServer": true,
+    "java.maxConcurrentBuilds": 4,
+    "java.semanticHighlighting.enabled": true,
 }
